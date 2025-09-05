@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demografía – Anuario Estadístico Cartagena</title>
+  <meta name="description" content="Indicadores demográficos de Cartagena: población, estructura por edades y proyecciones." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="img/EscudoCTG@.png">
+  <link rel="icon" type="image/png" href="img/logo.png" sizes="32x32">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar" role="region" aria-label="barra superior">
+    <div class="container">
+      <div class="brand">
+        <strong>Cartagena en Cifras</strong>
+        <span class="year-pill">2024</span>
+      </div>
+      <nav class="lang" aria-label="Idiomas">
+        <a href="#" aria-label="Español seleccionado">Español</a>
+        <a href="#">English</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero" role="banner">
+    <div class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">CT</div>
+        <div class="title">
+          <h1>📊 Demografía</h1>
+          <p>Indicadores poblacionales de Cartagena de Indias</p>
+        </div>
+      </div>
+    </div>
+    <svg class="wave" height="70" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#ffffff" d="M0,32 C240,72 480,0 720,20 C960,40 1200,72 1440,28 L1440,80 L0,80 Z"/>
+    </svg>
+  </header>
+
+  <!-- Menú / Tabs -->
+  <nav class="tabs" id="tabs" aria-label="Secciones del anuario">
+    <div class="container">
+      <button id="menuToggle" aria-label="Abrir menú" class="hamburger">☰</button>
+      <div id="menuItems" class="menu-items">
+        <a href="index.html#presentacion">Presentación</a>
+        <a href="demografia.html" class="active">Demografía</a>
+        <a href="educacion.html">Educación</a>
+        <a href="mercado.html">Mercado Laboral</a>
+        <a href="vivienda.html">Vivienda</a>
+        <a href="metodologia.html">Metodología</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Botón flotante índice -->
+<div class="floating-index" id="floatingIndex" aria-label="Abrir o cerrar índice">
+  ☰ Índice
+</div>
+
+<!-- Sidebar índice -->
+<aside class="sidebar-innovador" id="sidebarInnovador" role="navigation" aria-label="Índice del anuario">
+  <h3>📖 Índice del Anuario</h3>
+  
+  <div class="accordion">
+    <!-- Demografía -->
+    <button class="accordion-btn">📊 Demografía</button>
+    <div class="accordion-content">
+      <a href="demografia.html#poblacion">Población total</a>
+      <a href="demografia.html#edades">Estructura por edades</a>
+      <a href="demografia.html#proyecciones">Proyecciones</a>
+    </div>
+
+    <!-- Vivienda -->
+    <button class="accordion-btn">🏠 Vivienda</button>
+    <div class="accordion-content">
+      <a href="vivienda.html#acceso">Acceso a vivienda</a>
+      <a href="vivienda.html#calidad">Calidad de vivienda</a>
+    </div>
+
+    <!-- Salud -->
+    <button class="accordion-btn">❤️ Salud</button>
+    <div class="accordion-content">
+      <a href="salud.html#esperanza">Esperanza de vida</a>
+      <a href="salud.html#mortalidad">Tasa de mortalidad</a>
+      <a href="salud.html#cobertura">Cobertura en salud</a>
+    </div>
+
+    <!-- Trabajo -->
+    <button class="accordion-btn">💼 Trabajo</button>
+    <div class="accordion-content">
+      <a href="mercado.html#empleo">Tasa de empleo</a>
+      <a href="mercado.html#desempleo">Tasa de desempleo</a>
+    </div>
+
+    <!-- Educación -->
+    <button class="accordion-btn">🎓 Educación</button>
+    <div class="accordion-content">
+      <a href="educacion.html#escolaridad">Años de escolaridad</a>
+      <a href="educacion.html#matricula">Cobertura educativa</a>
+    </div>
+
+    <!-- Ambiente -->
+    <button class="accordion-btn">🌱 Ambiente</button>
+    <div class="accordion-content">
+      <a href="ambiente.html#residuos">Gestión de residuos</a>
+      <a href="ambiente.html#aire">Calidad del aire</a>
+    </div>
+
+    <!-- Metodología -->
+    <button class="accordion-btn">⚙️ Metodología</button>
+    <div class="accordion-content">
+      <a href="metodologia.html#fuentes">Fuentes de datos</a>
+      <a href="metodologia.html#definiciones">Definiciones</a>
+    </div>
+  </div>
+</aside>
+
+  
+<section id="demografia">
+  
+  <!-- Encabezado -->
+  <header>
+    <h2>📊 Demografía</h2>
+    <p>
+      La sección de demografía presenta la evolución poblacional de Cartagena, 
+      su estructura por edades y las proyecciones de crecimiento más recientes.
+      El análisis permite comprender las dinámicas sociales y los retos 
+      asociados al desarrollo urbano y la planificación territorial.
+    </p>
+  </header>
+
+  <!-- Artículo principal -->
+  <article>
+    <p>
+      La caracterización demográfica se fundamenta en los datos publicados por el 
+      <strong>DANE</strong> para el periodo 2020–2024. Estas cifras se construyen a partir del 
+      <em>Censo Nacional de Población y Vivienda 2018</em> y de las proyecciones oficiales, 
+      garantizando comparabilidad y confiabilidad.
+    </p>
+
+    <!-- Subtítulo -->
+    <h3 class="subtitulo">📈 Estructura demográfica y población</h3>
+
+    <!-- Contenedor del gráfico -->
+    <div class="tableau-container">
+      <div class='tableauPlaceholder' id='viz1755629461778'>
+        <noscript>
+          <a href='#'>
+            <img alt='Población y estructura' 
+              src='https://public.tableau.com/static/images/In/Indicadoresnuevo/Poblacinyestructura/1_rss.png' />
+          </a>
+        </noscript>
+        <object class='tableauViz'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='Indicadoresnuevo/Poblacinyestructura' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' 
+            value='https://public.tableau.com/static/images/In/Indicadoresnuevo/Poblacinyestructura/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='es-ES' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+    </div>
+
+
+
+    <!-- Fuente -->
+    <p class="fuente">
+      📌 Fuente: Departamento Administrativo Nacional de Estadística (DANE), proyecciones 2024.
+    </p>
+
+    <!-- Texto de análisis -->
+    <div class="analisis-texto">
+      <p>
+        De acuerdo con las proyecciones actualizadas del <strong>DANE</strong> tras el impacto 
+        del COVID-19, se estima que la población de Cartagena alcanzará los 
+        <strong>1.059.626 habitantes en 2024</strong>, un crecimiento del <strong>4,13 %</strong> 
+        respecto a 2020.
+      </p>
+      <p>
+        La población de <strong>adultos mayores</strong> crece un <strong>14,21 %</strong>, 
+        mientras que la <strong>población joven</strong> crece un <strong>1,49 %</strong>. 
+        Esto se traduce en <strong>200 jóvenes por cada 100 adultos mayores</strong> 
+        y <strong>51 adultos mayores por cada 100 jóvenes</strong>.
+      </p>
+      <p>
+        Además, las mujeres presentan una <strong>mayor edad promedio</strong>, reflejando tendencias 
+        de longevidad que afectan el promedio general de la población.
+      </p>
+    </div>
+
+  </article>
+</section>
+
+
+<section id="etnia">
+  
+  <!-- Encabezado -->
+  <header>
+    <h3>🧑🏽‍🤝‍🧑 Población Étnica</h3>
+    <p>
+      Según las proyecciones poblacionales del <strong>DANE 2024</strong>, 
+      224.321 personas se autorreconocen como Indígena, Gitano(a) o Rrom, Raizal, Palenquero, 
+      Negro(a), Mulato(a), Afrodescendiente o Afrocolombiano(a). Esto corresponde al <strong>21% de la población total</strong>.
+    </p>
+  </header>
+
+  <!-- Contenedor del gráfico -->
+  <div class="tableau-container">
+    <div class='tableauPlaceholder' id='viz1755629714176'>
+      <noscript>
+        <a href='#'>
+          <img alt='Población Étnica' 
+            src='https://public.tableau.com/static/images/In/Indicadoresnuevo/Etnia/1_rss.png' 
+            style='border:none;' />
+        </a>
+      </noscript>
+      <object class='tableauViz'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Indicadoresnuevo/Etnia' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' 
+          value='https://public.tableau.com/static/images/In/Indicadoresnuevo/Etnia/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='es-ES' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+
+    <!-- Fuente debajo del gráfico -->
+    <p class="fuente">
+      Fuente: <strong>DANE - Proyección poblacional (2024)</strong>
+    </p>
+  </div>
+
+  <!-- Descripción / Explicación -->
+  <div class="analisis-texto">
+    <p>
+      Esta gráfica muestra la composición étnica de la población de Cartagena según las proyecciones del DANE 2024. 
+      Se observa que el 21% de la población total se identifica con grupos étnicos diversos, 
+      reflejando la riqueza cultural y la diversidad de la ciudad. 
+      Estos datos permiten planificar políticas públicas, programas de inclusión y desarrollo social dirigidos a las comunidades étnicas.
+    </p>
+  </div>
+
+</section>
+
+<section id="piramide">
+
+  <!-- Encabezado -->
+  <header>
+    <h3>📊 Pirámide poblacional (2005-2024) y (2018-2024)</h3>
+  </header>
+
+  <!-- Contenedor del gráfico -->
+  <div class="tableau-container">
+    <div class='tableauPlaceholder' id='viz1755630104068'>
+      <noscript>
+        <a href='#'>
+          <img alt='Pirámide Poblacional 2005 y 2018' 
+            src='https://public.tableau.com/static/images/In/Indicadoresnuevo/DemografaPiramide2005y2018/1_rss.png' 
+            style='border:none;' />
+        </a>
+      </noscript>
+      <object class='tableauViz'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Indicadoresnuevo/DemografaPiramide2005y2018' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' 
+          value='https://public.tableau.com/static/images/In/Indicadoresnuevo/DemografaPiramide2005y2018/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='es-ES' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+
+    <!-- Fuente debajo del gráfico -->
+    <p class="fuente">
+      Fuente: <strong>DANE - Proyección poblacional (2024)</strong>
+    </p>
+  </div>
+
+  <!-- Descripción / Explicación -->
+  <div class="analisis-texto">
+    <p>
+      La pirámide poblacional es un histograma que muestra la composición de la población por edad y sexo. 
+      Según su forma, puede ser:
+    </p>
+    <ul>
+      <li><strong>Progresiva o expansiva:</strong> base ancha, representa juventud.</li>
+      <li><strong>Regresiva o constrictiva:</strong> base más estrecha y zona media ensanchada, representa madurez.</li>
+      <li><strong>Estacionaria o estable:</strong> indica vejez.</li>
+    </ul>
+    <p>
+      Comparando 2005 y 2024, se observa ensanchamiento desde adolescencia hasta la cúspide, 
+      con estrechamiento en grupos de infancia, reflejando disminución en la tasa de nacimiento y envejecimiento poblacional. 
+      En relación a 2018, se observa aumento de la cúspide.
+    </p>
+  </div>
+
+</section>
+
+
+<section id="piramide-reciente">
+  
+  <!-- Encabezado -->
+  <header>
+    <h3>📊 Pirámide poblacional (2022-2024 y 2023-2024)</h3>
+  </header>
+
+  <!-- Contenedor del gráfico -->
+  <div class='tableauPlaceholder' id='viz1755630395306' style='position: relative;'>
+  <noscript>
+    <a href='#'>
+      <img alt='Demografía Pirámide 2022-2023' 
+        src='https://public.tableau.com/static/images/In/Indicadoresnuevo/DemografaPiramide2022-2023/1_rss.png' 
+        style='border:none;' />
+    </a>
+  </noscript>
+  <object class='tableauViz'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+    <param name='embed_code_version' value='3' />
+    <param name='site_root' value='' />
+    <param name='name' value='Indicadoresnuevo/DemografaPiramide2022-2023' />
+    <param name='tabs' value='no' />
+    <param name='toolbar' value='yes' />
+    <param name='static_image' value='https://public.tableau.com/static/images/In/Indicadoresnuevo/DemografaPiramide2022-2023/1.png' />
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+    <param name='language' value='es-ES' />
+    <param name='filter' value='publish=yes' />
+  </object>
+</div>
+
+<script type='text/javascript'>
+  var divElement = document.getElementById('viz1755630395306');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+
+  function ajustarTableau() {
+    var width = divElement.offsetWidth;
+    vizElement.style.width = '100%';
+    if(width > 800) {
+      vizElement.style.height = (width * 0.75) + 'px';
+    } else if(width > 500) {
+      vizElement.style.height = (width * 0.75) + 'px';
+    } else {
+      vizElement.style.height = '900px';
+    }
+  }
+
+  // Ajustar al cargar y al redimensionar
+  window.addEventListener('load', ajustarTableau);
+  window.addEventListener('resize', ajustarTableau);
+
+  // Cargar script de Tableau
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+
+      <!-- Fuente debajo del gráfico -->
+      <p class="fuente">
+        Fuente: <strong>DANE - Proyección poblacional (2024)</strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- Descripción / Explicación -->
+  <div class="analisis-texto">
+    <p>
+      Con respecto al año 2022, se observa que la pirámide era más ancha en el grupo etario de mayores de 85 años y tenía mayor pronunciación en el grupo de infancia comparado con 2024. Para el año 2023 se nota una disminución en el grupo de infancia y un mayor peso en la población de jóvenes y adultos, creando simetría con la población del 2024 y mostrando una forma piramidal regresiva.  
+      Esto refleja un envejecimiento poblacional, útil para planificar políticas de salud, educación y servicios para distintos grupos etarios.
+    </p>
+  </div>
+
+</section>
+
+
+
+
+  <!-- Footer -->
+<footer class="gov-footer-cards">
+  <div class="container footer-cards-grid">
+    <div class="footer-card footer-logos">
+      <img src="https://www.gov.co/uploads/govco-logo.svg" alt="GOV.CO">
+    </div>
+    <div class="footer-card">
+      <strong>Secretaría de Planeación Distrital</strong>
+      <p>Dirección: Cartagena, Colombia, Barrio Manga, Calle 26 con Carrera 21 - Casa Arcadia</p>
+    </div>
+    <div class="footer-card">
+      <strong>📞 Contacto</strong>
+      <p>Teléfono: +57 (605) 641 13 70</p>
+      <p>Correo: <a href="mailto:planeacion@cartagena.gov.co">planeacion@cartagena.gov.co</a></p>
+    </div>
+  </div>
+  <div class="footer-legal">
+    <a href="#">Políticas</a> | <a href="#">Mapa del sitio</a> | <a href="#">Términos</a>
+  </div>
+</footer>
+
+
+  <!-- Botones flotantes -->
+  <div class="fab fab-pdf"><a href="documento.pdf" target="_blank">⤓</a></div>
+  <div class="fab fab-glossary" onclick="toggleGlossary()">📖</div>
+  <div class="fab fab-top" id="btnTop">↑</div>
+
+ <!-- Fondo oscuro -->
+<div id="glossaryOverlay"></div>
+
+<!-- Glosario -->
+<div id="glossaryContent" class="glossary-popup" role="dialog" aria-labelledby="glossaryTitle">
+  <h2 id="glossaryTitle">👥 Glosario de Demografía</h2>
+  <ul>
+    <li><strong>Población:</strong> Total de habitantes de un territorio.</li>
+    <li><strong>Estructura etaria:</strong> Distribución de la población por grupos de edad.</li>
+    <li><strong>Proyecciones:</strong> Estimaciones sobre el crecimiento futuro de la población.</li>
+    <li><strong>Índice de Friz:</strong> Relación entre la población joven (0-14) y mayor (65+), respecto a la población en edad productiva (15-64). Un valor bajo indica envejecimiento.</li>
+    <li><strong>Tasa de fecundidad:</strong> Número promedio de hijos que tendría una mujer durante su vida fértil (15-49 años).</li>
+    <li><strong>Tasa de fecundidad específica:</strong> Nacimientos por cada 1.000 mujeres en un grupo de edad específico.</li>
+    <li><strong>Índice de juventud:</strong> Proporción de personas menores de 15 años frente a la población adulta.</li>
+    <li><strong>Índice de envejecimiento:</strong> Relación entre población de 65+ años y menores de 15 años.</li>
+    <li><strong>Población adulta mayor:</strong> Personas de 65 años o más.</li>
+    <li><strong>Población joven:</strong> Personas de 0 a 14 años.</li>
+    <li><strong>Pirámide poblacional:</strong> Gráfico que muestra la distribución de la población por edad y sexo.</li>
+    <li><strong>Tasa de reemplazo:</strong> Número de hijos por mujer necesario para mantener el tamaño de la población (≈2,1).</li>
+  </ul>
+  <button onclick="toggleGlossary()" class="btn-close" aria-label="Cerrar glosario">✖ Cerrar</button>
+</div>
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
